@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #C14600;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,13 +45,15 @@ body, html {
 
 .container {
   display: flex;
-  height: 100vh;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* Side Navigation */
 .side-nav {
   width: 15%;
-  background-color: #e0e0e0;
+  background-color: #df6a1c;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -59,6 +61,9 @@ body, html {
 .side-nav ul {
   list-style: none;
   padding: 0;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  font-size: larger;
 }
 
 .side-nav li {
@@ -70,19 +75,59 @@ body, html {
   width: 85%;
   display: flex;
   flex-direction: column;
+  background-color: #fef9e1c6;
+  box-sizing: border-box;
+}
+
+.main-content h1{
+  margin-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-content h2{
+  margin-left: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main-content p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  margin-left: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-block {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* Add more styles as needed */
+}
+
+/* Optional: headings inside text blocks */
+.text-block h2 {
+  margin-top: 0;
+}
+
+/* Optional: paragraphs inside text blocks */
+.text-block p {
+  line-height: 1.6;
 }
 
 /* Top Navigation */
 .top-nav {
-  background-color: #333;
+  background-color: #FF9D23;
   color: white;
   padding: 10px;
+  font-family: monospace;
+  font-size: x-large;
 }
 
 .top-nav nav a {
-  color: white;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
   margin-right: 15px;
   text-decoration: none;
+  padding-left: 20px;
 }
 
 /* Image Carousel */
@@ -110,7 +155,7 @@ body, html {
 }
 
 /* Auto-Scrolling Text */
-.scroll-text {
+/* .scroll-text {
   overflow-y: auto;
   height: 200px;
   padding: 20px;
@@ -125,4 +170,17 @@ body, html {
 @keyframes scrollUp {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50%); }
+} */
+
+.footer {
+  background-color: #222;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+  min-height: 30vh; /* 30% of viewport height */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
