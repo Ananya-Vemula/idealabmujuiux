@@ -76,7 +76,6 @@ const AboutUsPage = () => {
           <ul>
             <li>Prisha</li>
             <li>Vemula</li>
-            <li>Dominque</li>
           </ul>
         </section>
       </div>
