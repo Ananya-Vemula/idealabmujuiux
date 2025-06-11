@@ -3,6 +3,8 @@ import './App.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import AboutUsPage from './AboutUsPage';
 import StudentsAndFacultiesPage from './StudentsAndFacultiesPage';
+import FacilitiesPage from './FacilitiesPage';
+
 
 const images = [
   '/images/img1.jpg',
@@ -39,7 +41,7 @@ const App = () => {
           <div className="top-nav">
             <nav>
               <Link to="/about">About Us</Link>
-              <a href="#facilities">Facilities</a>
+              <Link to="/facilities">Facilities</Link>   
               <a href="#projects">Projects & Research</a>
               <a href="#involved">Get Involved</a>
               <Link to="/students">Student & Faculties</Link>
@@ -58,6 +60,7 @@ const App = () => {
             <Routes>
               <Route path="/about" element={<AboutUsPage />} />
               <Route path="/students" element={<StudentsAndFacultiesPage />} />
+              <Route path="/facilities" element={<FacilitiesPage />} />
               <Route
                 path="/"
                 element={

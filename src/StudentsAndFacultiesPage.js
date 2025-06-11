@@ -26,6 +26,7 @@ const StudentsAndFacultiesPage = () => {
           <tr><td>Dr. Himanshu Priyadarshi</td><td>Team Member</td><td>Computer Science</td><td>[email/contact]</td></tr>
         </tbody>
       </table>
+      <br />
 
       <h2>Student Contributors</h2>
       <table style={{ width: '80%', margin: 'auto', borderCollapse: 'collapse' }} border="1">
