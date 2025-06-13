@@ -3,100 +3,113 @@ import React from 'react';
 const AboutUsPage = () => {
   return (
     <>
-      <h2>About Us</h2>
-      <p>
-        The [Your Institution's Name] has established a dedicated center under the visionary
-        support of AICTE’s IDEA Lab scheme, aimed at nurturing innovation, creativity, and design
-        thinking among students and faculty. This initiative bridges the gap between theoretical
-        knowledge and practical implementation by offering a hands-on learning environment
-        equipped with state-of-the-art tools and technologies.
-      </p>
+      <section id="aboutus">
+        <h2>About Us</h2>
+        <p>
+          The [Your Institution's Name] has established a dedicated center under the visionary support of AICTE’s IDEA Lab scheme...
+        </p>
+      </section>
 
-      <h2>Vision</h2>
-      <p>
-        To create a self-sustaining ecosystem of innovation and applied learning that empowers
-        students and faculty to solve real-world problems through interdisciplinary collaboration,
-        prototyping, and entrepreneurial thinking.
-      </p>
+      <section id="vision">
+        <h2>Vision</h2>
+        <p>
+          To create a self-sustaining ecosystem of innovation and applied learning...
+        </p>
+      </section>
 
-      <h2>Mission</h2>
-      <ul>
-        <li>To inculcate a culture of design, innovation, and critical thinking at the grassroots level.</li>
-        <li>To provide resources and mentorship to develop prototypes, working models, and technology-based solutions.</li>
-        <li>To act as a catalyst for project-based learning integrated with the institution’s academic curriculum.</li>
-      </ul>
+      <section id="mission">
+        <h2>Mission</h2>
+        <ul>
+          <li>To inculcate a culture of design, innovation...</li>
+          <li>To provide resources and mentorship...</li>
+          <li>To act as a catalyst for project-based learning...</li>
+        </ul>
+      </section>
 
-      <h2>Objectives</h2>
-      <ul>
-        <li>Encourage interdisciplinary projects and student-led innovation.</li>
-        <li>Foster collaboration between academia, industry, and research organizations.</li>
-        <li>Support the development of low-cost, scalable prototypes addressing societal challenges.</li>
-        <li>Provide structured mentoring and training for students and faculty in emerging technologies.</li>
-      </ul>
+      <section id="objectives">
+        <h2>Objectives</h2>
+        <ul>
+          <li>Encourage interdisciplinary projects...</li>
+          <li>Foster collaboration between academia...</li>
+          <li>Support the development of low-cost, scalable prototypes...</li>
+          <li>Provide structured mentoring and training...</li>
+        </ul>
+      </section>
 
-      <h2>Key Highlights</h2>
-      <ul>
-        <li>Established under the National Initiative for Developing and Harnessing Innovations (NIDHI).</li>
-        <li>Equipped with advanced prototyping tools such as 3D printers, laser cutters, and IoT devices.</li>
-        <li>Active collaboration with industry and academia for project development.</li>
-        <li>Organizes regular workshops, hackathons, and innovation challenges.</li>
-        <li>Multiple student and faculty-led innovations funded and recognized.</li>
-      </ul>
+      <section id="highlights">
+        <h2>Key Highlights</h2>
+        <ul>
+          <li>Established under NIDHI...</li>
+          <li>Equipped with advanced prototyping tools...</li>
+          <li>Active collaboration with industry...</li>
+          <li>Organizes workshops, hackathons...</li>
+          <li>Multiple innovations funded and recognized.</li>
+        </ul>
+      </section>
 
-      <h2>Leadership Message</h2>
-      <blockquote>
-        “Innovation is not a choice—it is a necessity. Through this platform, we aim to transform
-        students into problem-solvers and changemakers. Our IDEA Lab is a step toward making education
-        more experiential, creative, and impactful.”  
-        <br />– <strong>Dr. [Director's/Dean’s Name]</strong>, Director/Coordinator, IDEA Lab
-      </blockquote>
+      <section id="leadership-message">
+        <h2>Leadership Message</h2>
+        <blockquote>
+          “Innovation is not a choice—it is a necessity. Through this platform, we aim to transform students into problem-solvers and changemakers...”  
+          <br /><strong>– Dr. [Director's/Dean’s Name]</strong>
+        </blockquote>
+      </section>
 
-      <h2>Vision for the IDEA Lab</h2>
-      <p>
-        The IDEA Lab will serve as a hub for enhancing science and engineering education,
-        benefiting students, faculty, industry professionals, and the workforce by aligning
-        with the latest industry trends and practices.
-      </p>
+      <section id="vision-idea-lab">
+        <h2>Vision for the IDEA Lab</h2>
+        <p>
+          The IDEA Lab will serve as a hub for enhancing science and engineering education...
+        </p>
+      </section>
 
-      <h2>Benefits to Students and Staff</h2>
+      <section id="benefits">
+        <h2>Benefits to Students and Staff</h2>
 
-      <h3>Students: UG/PG/Projects/Internships</h3>
-      <p>
-        The End-to-End Facilities for Skill Development offer students access to a well-equipped
-        lab filled with extensive resources for prototype creation and refinement.
-      </p>
+        <h3>Students</h3>
+        <p>
+          End-to-End Facilities for Skill Development offer students access to resources for prototyping...
+        </p>
 
-      <h3>Staff</h3>
-      <p>
-        Extending classroom learning with practical applications bridges the gap between theory
-        and practice by integrating hands-on experiences and real-world problem-solving.
-      </p>
+        <h3>Staff</h3>
+        <p>
+          Extending classroom learning with practical applications bridges theory and practice...
+        </p>
+      </section>
 
-      <h2>Leadership</h2>
-      <ul>
-        <li>Head of Institute/Chief Mentor: Prof. (Dr.) Amit Soni</li>
-        <li>Faculty Coordinator: Prof. (Dr.) Ashima Bagaria</li>
-        <li>Faculty Co-Coordinator: Dr. Preeti Narooka</li>
-      </ul>
+      <section id="leadership">
+        <h2>Leadership</h2>
+        <ul>
+          <li>Prof. (Dr.) Amit Soni – Chief Mentor</li>
+          <li>Prof. (Dr.) Ashima Bagaria – Faculty Coordinator</li>
+          <li>Dr. Preeti Narooka – Faculty Co-Coordinator</li>
+        </ul>
+      </section>
 
-      <h3>AICTE IDEA Lab Team</h3>
-      <ul>
-        <li>Dr. Ashima Bagaria</li>
-        <li>Dr. Preeti Narooka</li>
-        <li>Dr. Manoj K. Saini</li>
-        <li>Dr. Saurabh Dewangan</li>
-        <li>Dr. Anurag Joshi</li>
-        <li>Dr. Himanshu Chaudhary</li>
-        <li>Mr. Ashish Vijay</li>
-        <li>Dr. Vinay Gupta</li>
-        <li>Dr. Himanshu Priyadarshi</li>
-      </ul>
+      <section id="team">
+        <h3>AICTE IDEA Lab Team</h3>
+        <ul>
+          <li>Dr. Ashima Bagaria</li>
+          <li>Dr. Preeti Narooka</li>
+          <li>Dr. Manoj K. Saini</li>
+          <li>Dr. Saurabh Dewangan</li>
+          <li>Dr. Anurag Joshi</li>
+          <li>Dr. Himanshu Chaudhary</li>
+          <li>Mr. Ashish Vijay</li>
+          <li>Dr. Vinay Gupta</li>
+          <li>Dr. Himanshu Priyadarshi</li>
+        </ul>
+      </section>
 
-      <h3>Student Team Members</h3>
-      <ul>
-        <li>Prisha</li>
-        <li>Vemula</li>
-      </ul>
+      <section id="students">
+        <h3>Student Team Members</h3>
+        <ul>
+          <li>Prisha</li>
+          <li>Vemula</li>
+        </ul>
+      </section>
+      <section id="contact-footer" className="contact-footer">
+        <p>Contact Us | College: Manipal University Jaipur | Phone: 0141 399 9100</p>
+      </section>
     </>
   );
 };
