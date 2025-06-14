@@ -41,7 +41,7 @@ body, html {
   margin: 0;
   font-family: Arial, sans-serif;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
   scroll-behavior: smooth;
 }
 
@@ -52,28 +52,31 @@ body, html {
   flex-wrap: wrap;
 }
 
-.page-container{
+.page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+.content-body {
+  flex: 1; /* Push footer to bottom */
+  overflow-wrap: break-word; /* Handle text overflow */
+}
+
 [id] {
-  scroll-margin-top: 70px; /* enough space to avoid getting hidden under top nav */
+  scroll-margin-top: 70px;
 }
 
 section {
-  scroll-margin-top: 70px; /* adjust this to match your top-nav height */
+  scroll-margin-top: 70px;
 }
 
-/* Wrap the whole page */
 .about-us-page {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
-/* Sidebar */
 .side-nav {
   z-index: 1000;
   width: 220px;
@@ -87,7 +90,6 @@ section {
   left: 0;
   font-family: 'Courier New', Courier, monospace;
   font-size: larger;
-  
 }
 
 .side-nav ul {
@@ -116,13 +118,12 @@ section {
 }
 
 .sidebar-logo {
-  width: 150px;  /* Adjust size as needed */
+  width: 150px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* Main content section */
 .main-content {
   position: absolute;     
   left: 220px;  
@@ -132,7 +133,7 @@ section {
   overflow-y: auto;
   width: calc(100% - 220px);
   height: 100%;
-  
+  overflow-wrap: break-word; /* Ensure text wraps */
 }
 
 .main-content section {
@@ -157,27 +158,22 @@ section {
   background-color: #fefefe;
   border: 1px solid #ddd;
   border-radius: 8px;
-  /* Add more styles as needed */
 }
 
-/* Optional: headings inside text blocks */
 .text-block h2 {
   margin-top: 0;
 }
 
-/* Optional: paragraphs inside text blocks */
 .text-block p {
   line-height: 1.6;
 }
 
-/* Top Navigation */
 .top-nav {
   position: fixed;
   left: 220px;
   height: 60px;
   background-color: #FF9D23;
   color: white;
-  /* padding: 10px; */
   font-family: monospace;
   font-size: x-large;
   display: flex;
@@ -195,7 +191,6 @@ section {
   padding-left: 20px;
 }
 
-/* Image Carousel */
 .carousel {
   display: flex;
   justify-content: center;
@@ -219,61 +214,15 @@ section {
   cursor: pointer;
 }
 
-/* Auto-Scrolling Text */
-/* .scroll-text {
-  overflow-y: auto;
-  height: 200px;
-  padding: 20px;
-  background: #fafafa;
-  animation: scrollUp 10s linear infinite;
-}
-
-.scroll-text p {
-  margin: 10px 0;
-}
-
-@keyframes scrollUp {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50%); }
-} */
-
-/* .footer {
-  background-color: #222;
-  color: #f1f1f1;
-  text-align: center;
-  padding: 40px 20px;
-  width: 100%;
-  min-height: 30vh; 
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 .footer {
   background-color: #333;
   text-align: center;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
-  font-weight: bold;
-  color: white;
-  margin-top: auto;
-  position: sticky;
-}
-
-.contact-footer {
-  margin-top: 10vh;
   padding: 20px;
-  background-color: #333;
   color: white;
   font-weight: bold;
-  text-align: center;
-  width: 100%;
-  height: 20%;
-  
+  width: 98%;
+  margin-top: auto; /* Push to bottom */
 }
-
 
 .faculty-container {
   display: flex;
