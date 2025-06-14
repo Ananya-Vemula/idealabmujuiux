@@ -32,25 +32,25 @@ const AboutUsPage = () => {
         <section id="objectives">
           <h2>Objectives</h2>
           <ul>
-            <li>• Encourage interdisciplinary projects with social impact</li>
-            <li>• Foster industry-academia collaboration on real-world challenges</li>
-            <li>• Support development of low-cost, scalable prototypes</li>
-            <li>• Provide structured mentoring through faculty bootcamps</li>
-            <li>• Organize 200+ annual activities including workshops, hackathons, and internships
+            <li>Encourage interdisciplinary projects with social impact</li>
+            <li>Foster industry-academia collaboration on real-world challenges</li>
+            <li>Support development of low-cost, scalable prototypes</li>
+            <li>Provide structured mentoring through faculty bootcamps</li>
+            <li>Organize 200+ annual activities including workshops, hackathons, and internships
             </li>
-            <li>• Promote innovation in critical sectors like healthcare, agriculture, and sustainability</li>
+            <li>Promote innovation in critical sectors like healthcare, agriculture, and sustainability</li>
           </ul>
         </section>
 
         <section id="highlights">
           <h2>Key Highlights</h2>
           <ul>
-            <li>• Established under AICTE's NIDHI initiative with ₹55 lakh funding</li>
-            <li>• 3000+ sq. ft. facility equipped with 50+ advanced tools including 3D printers, laser cutters, and CNC machines</li>
-            <li>• Active industry partnerships with 15+ companies for live projects</li>
-            <li>• 24x7 operational lab with security-controlled access</li>
-            <li>• Part of national IDEA Labs Network (IDEALNET)</li>
-            <li>• Recipient of National Innovation Award 2024</li>
+            <li>Established under AICTE's NIDHI initiative with ₹55 lakh funding</li>
+            <li>3000+ sq. ft. facility equipped with 50+ advanced tools including 3D printers, laser cutters, and CNC machines</li>
+            <li>Active industry partnerships with 15+ companies for live projects</li>
+            <li>24x7 operational lab with security-controlled access</li>
+            <li>Part of national IDEA Labs Network (IDEALNET)</li>
+            <li>Recipient of National Innovation Award 2024</li>
           </ul>
         </section>
 
