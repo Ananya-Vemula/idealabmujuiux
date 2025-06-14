@@ -311,3 +311,13 @@ tr:hover {
 .contact-link:hover {
   text-decoration: underline;
 }
+
+/* Stacked logo layout */
+.logo-container.stacked {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo-container.stacked .sidebar-logo {
+  max-width: 80%;
+}

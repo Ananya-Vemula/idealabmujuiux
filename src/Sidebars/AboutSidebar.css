@@ -1,0 +1,79 @@
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  flex-wrap: wrap;
+}
+
+.sidebar-logo {
+  object-fit: contain;
+  background-color: transparent;
+  border-radius: 4px;
+  display: block;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15); /* subtle elevation */
+}
+
+.sidebar-logo:hover {
+  transform: scale(1.05); /* slight zoom on hover */
+}
+
+.idea-logo {
+  max-height: 90px;
+  max-width: 70px;
+}
+
+.muj-logo {
+  max-height: 60px;
+  max-width: 118px;
+}
+
+.side-nav {
+  width: 230px;
+  height: 100vh;
+  background-color: #e26500; /* deeper orange */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  font-family: 'Courier New', monospace; /* or use a clean sans-serif like Roboto */
+}
+
+
+.side-nav h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.side-nav hr {
+  border: none;
+  height: 1px;
+  background-color: #ffffff99;
+  margin-bottom: 16px;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav li {
+  margin: 10px 0;
+}
+
+.side-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.side-nav a:hover {
+  color: #ffe0b3;
+}
