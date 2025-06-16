@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer'; 
 
 const AboutUsPage = () => {
   return (
@@ -135,9 +136,8 @@ We focus on sustainable technologies that address rural challenges while alignin
           </ul>
         </section>
       </div>
-      <footer className="footer">
-        <p>Contact Us | College: Manipal University Jaipur | Phone: 0141 399 9100</p>
-      </footer>
+
+    <Footer />
     </div>
   );
 };

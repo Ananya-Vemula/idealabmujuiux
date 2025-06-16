@@ -1,5 +1,7 @@
 import React from 'react';
 import StudentsSidebar from './Sidebars/StudentsSidebar';
+import Footer from './Footer'; 
+
 
 const StudentsAndFacultiesPage = () => {
   return (
@@ -108,6 +110,7 @@ const StudentsAndFacultiesPage = () => {
         We’re not just preparing students for exams—we’re preparing them for impact.”  
         <br /><strong>— Prof. (Dr.) Amit Soni, Chief Mentor</strong>
       </blockquote>
+      <Footer />
     </div>
   );
 };

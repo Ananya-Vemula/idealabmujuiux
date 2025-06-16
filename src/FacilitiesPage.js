@@ -1,5 +1,7 @@
 import React from 'react';
-import FacilitiesSidebar from './Sidebars/FacilitiesSidebar'; 
+import FacilitiesSidebar from './Sidebars/FacilitiesSidebar';
+import Footer from './Footer'; 
+
 
 const FacilitiesPage = () => {
   return (
@@ -74,6 +76,7 @@ const FacilitiesPage = () => {
           <p><em>[Insert a carousel or grid of high-quality images here]</em></p>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };
