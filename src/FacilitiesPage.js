@@ -1,12 +1,11 @@
 import React from 'react';
 import FacilitiesSidebar from './Sidebars/FacilitiesSidebar';
-import Footer from './Footer'; 
-
+import Footer from './Footer';
 
 const FacilitiesPage = () => {
   return (
     <div className="page-container">
-      <FacilitiesSidebar /> {}
+      <FacilitiesSidebar />
 
       <div className="content-body">
         <section id="facilities">
@@ -15,6 +14,45 @@ const FacilitiesPage = () => {
             Our IDEA Lab at Manipal University Jaipur is designed to empower students and faculty with
             state-of-the-art tools, creative spaces, and technical support to turn innovative ideas into reality.
           </p>
+        </section>
+
+        <section id="infrastructure">
+          <h3>IDEA Lab Infrastructure</h3>
+          <ul>
+            <li><strong>State-of-the-Art Innovation Hub:</strong> The IDEA Lab integrates modern tools, workbenches, and digital fabrication equipment for prototype development and hands-on learning.</li>
+            <li><strong>End-to-End Skill Development Facilities:</strong> From ideation to prototyping, testing, and promotion — all under one roof.</li>
+            <li><strong>Integration with Existing Labs:</strong> Collaborates with departments like Physics Innovation Hub for shared innovation.</li>
+            <li><strong>Eco-Friendly Focus:</strong> Sustainable practices and pollution-minimizing technologies, particularly in healthcare solutions.</li>
+            <li><strong>24x7 Access Support:</strong> Especially for initiatives like Atal Tinkering Labs to encourage continuous innovation.</li>
+          </ul>
+        </section>
+
+        <section id="resources">
+          <h3>Available Resources</h3>
+          <ul>
+            <li>3D Printers, CNC Machines, Laser Cutters</li>
+            <li>IoT Development Boards, Embedded Systems Kits</li>
+            <li>High-performance workstations for AI/ML, simulations, and CAD modeling</li>
+            <li>Testbeds for electronics, robotics, and environmental monitoring</li>
+          </ul>
+        </section>
+
+        <section id="experimental-capabilities">
+          <h3>Experimental Capabilities</h3>
+          <ul>
+            <li>Supports planning, designing, programming, prototyping, and implementing tech solutions</li>
+            <li>Enables research experimentation contributing to academic publications and patents</li>
+          </ul>
+        </section>
+
+        <section id="spaces">
+          <h3>Multi-Purpose Spaces</h3>
+          <ul>
+            <li><strong>Project Rooms:</strong> For group-based collaboration</li>
+            <li><strong>Fabrication Units:</strong> Dedicated for hardware builds</li>
+            <li><strong>Testing Zones:</strong> Safety-compliant spaces for conducting trials</li>
+            <li><strong>Training Areas:</strong> Fully equipped for workshops, seminars, and demo sessions</li>
+          </ul>
         </section>
 
         <section id="labs-equipment">
@@ -64,16 +102,6 @@ const FacilitiesPage = () => {
 
         <section id="gallery">
           <h3>Gallery</h3>
-          <p>
-            Showcase innovation in action! The IDEA Lab gallery includes:
-          </p>
-          <ul>
-            <li>Project builds in progress</li>
-            <li>Workshop snapshots</li>
-            <li>Competition participation</li>
-            <li>Equipment in use</li>
-          </ul>
-          <p><em>[Insert a carousel or grid of high-quality images here]</em></p>
         </section>
       </div>
       <Footer />

@@ -20,6 +20,10 @@ const StudentsSidebar = () => (
     <ul>
       <li><a href="#faculty">Faculty Members</a></li>
       <li><a href="#student">Student Contributors</a></li>
+      <li><a href="#student-benefits">For Students</a></li>
+      <li><a href="#faculty-benefits">For Faculty</a></li>
+      <li><a href="#joint-efforts">Joint Efforts</a></li>
+      <li><a href="#highlighted-teams">Highlighted Teams</a></li>
       <li><a href="#mentorship">Mentorship Network</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#testimonials">Testimonials</a></li>

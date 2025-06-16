@@ -18,7 +18,11 @@ const FacilitiesSidebar = () => (
     <h2>Navigation</h2>
     <hr />
     <ul>
-      <li><a href="#facilities">Facilities at the IDEA Lab</a></li>
+      <li><a href="#facilities">Overview</a></li>
+      <li><a href="#infrastructure">IDEA Lab Infrastructure</a></li>
+      <li><a href="#resources">Available Resources</a></li>
+      <li><a href="#experimental-capabilities">Experimental Capabilities</a></li>
+      <li><a href="#spaces">Multi-Purpose Spaces</a></li>
       <li><a href="#labs-equipment">Labs & Equipment</a></li>
       <li><a href="#tools-software">Technological Tools & Software</a></li>
       <li><a href="#innovation-spaces">Collaborative Innovation Spaces</a></li>
