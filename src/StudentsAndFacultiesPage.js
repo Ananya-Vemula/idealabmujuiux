@@ -41,7 +41,17 @@ const StudentsAndFacultiesPage = () => {
             </tr>
           </thead>
           <tbody>
-            {/* Table rows as before */}
+            <tr><td>Prof. (Dr.) Amit Soni</td><td>Chief Mentor</td><td>Academic Leadership, Innovation</td><td><a href="https://jaipur.manipal.edu/fosta/faculty-details.php?url=273/" className="contact-link">Info</a></td></tr>
+            <tr><td>Prof. (Dr.) Ashima Bagaria</td><td>Faculty Coordinator</td><td>Engineering Design, Prototyping</td><td><a href="https://jaipur.manipal.edu/fosta/associate-dean-ashima.php" className="contact-link">Info</a></td></tr>
+            <tr><td>Dr. Preeti Narooka</td><td>Co-Coordinator</td><td>Electronics & Communication</td><td><a href="https://jaipur.manipal.edu/fosta/faculty-details.php?url=89/" className="contact-link">Info</a></td></tr>
+            <tr><td>Dr. Manoj K. Saini</td><td>Team Member</td><td>IoT, Embedded Systems</td><td><a href="https://jaipur.manipal.edu/fosta/faculty-details.php?url=594/" className="contact-link">Info</a></td></tr>
+            <tr><td>Dr. Saurabh Dewangan</td><td>Team Member</td><td>Mechanical Engineering</td><td><a href="mailto:saurabh.dewangan@jaipur.manipal.edu" className="contact-link">Contact</a></td></tr>
+            <tr><td>Dr. Anurag Joshi</td><td>Team Member</td><td>Civil Engineering</td><td><a href="mailto:anurag.joshi@example.com" className="contact-link">Contact</a></td></tr>
+            <tr><td>Dr. Himanshu Chaudhary</td><td>Team Member</td><td>Electrical Engineering</td><td><a href="mailto:himanshu.chaudhary@example.com" className="contact-link">Contact</a></td></tr>
+            <tr><td>Mr. Ashish Vijay</td><td>Team Member</td><td>Design Thinking</td><td><a href="mailto:ashish.vijay@example.com" className="contact-link">Contact</a></td></tr>
+            <tr><td>Dr. Vinay Gupta</td><td>Team Member</td><td>Robotics & Automation</td><td><a href="mailto:vinay.gupta@example.com" className="contact-link">Contact</a></td></tr>
+            <tr><td>Dr. Himanshu Priyadarshi</td><td>Team Member</td><td>Computer Science</td><td><a href="mailto:himanshu.priyadarshi@example.com" className="contact-link">Contact</a></td></tr>
+            
           </tbody>
         </table>
       </div>
