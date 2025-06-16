@@ -77,3 +77,11 @@
 .side-nav a:hover {
   color: #ffe0b3;
 }
+
+.side-nav ul li a {
+  font-family: 'Courier New', monospace;
+}
+
+.side-nav{
+  font-family: 'Courier New',monospace;
+}
