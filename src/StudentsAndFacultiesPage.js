@@ -5,7 +5,6 @@ import Footer from './Footer';
 const StudentsAndFacultiesPage = () => {
   return (
     <div className="about-page">
-      <StudentsSidebar />
 
       <div className="faculty-container">
         <h2 id='faculty'>Faculty Members</h2>

@@ -90,6 +90,7 @@ section {
   left: 0;
   font-family: 'Courier New', Courier, monospace;
   font-size: larger;
+  
 }
 
 .side-nav ul {
@@ -125,15 +126,25 @@ section {
 }
 
 .main-content {
-  position: absolute;     
-  left: 220px;  
-  background-color: #fef9e1c6;
+  margin-left: 220px; /* Width of the sidebar */
+  margin-top: 60px;   /* Height of the navbar */
   padding: 20px;
-  box-sizing: border-box;
+  background-color: #fef9e1c6;
   overflow-y: auto;
-  width: calc(100% - 220px);
-  height: 100%;
-  overflow-wrap: break-word; /* Ensure text wraps */
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+/* .page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+} */
+
+
+
+.main-content.with-alert {
+  margin-top: 100px; /* navbar (60px) + alert (40px) */
 }
 
 .main-content section {
@@ -152,10 +163,60 @@ section {
   margin-left: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.alert-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff0000;
+  color: #000;
+  padding: 10px 20px;
+  font-weight: bold;
+  position: fixed;
+  top: 60px; /* just below navbar */
+  left: 220px; /* adjust based on sidebar width */
+  right: 0;
+  height: 40px;
+  z-index: 998;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.marquee {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 15px;
+  color: black;
+}
+/* Adjust main content if alert is visible */
+.main-content.with-alert {
+  top: 100px; /* 60px top-nav + 40px alert */
+}
+
 .text-block {
   padding: 20px;
   margin: 20px;
-  background-color: #fefefe;
+  background-color: #f01a1a;
   border: 1px solid #ddd;
   border-radius: 8px;
 }
@@ -181,15 +242,31 @@ section {
   box-sizing: border-box;
   z-index: 900;
   width: 100%;
+  padding-left: 20px;
 }
+
 
 .top-nav nav a {
   color: rgb(0, 0, 0);
   font-weight: bolder;
   margin-right: 15px;
   text-decoration: none;
-  padding-left: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
+
+/* Hover effect */
+.top-nav nav a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Active link (when on that page) */
+.top-nav nav .active {
+  background-color: rgba(0, 0, 0, 0.15); /* Same as hover or make it stronger */
+}
+
 
 .carousel {
   display: flex;

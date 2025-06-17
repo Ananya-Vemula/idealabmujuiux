@@ -5,7 +5,6 @@ import Footer from './Footer';
 const FacilitiesPage = () => {
   return (
     <div className="page-container">
-      <FacilitiesSidebar />
 
       <div className="content-body">
         <section id="facilities">

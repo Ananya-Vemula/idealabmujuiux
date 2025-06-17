@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Routes, Route, NavLink, useLocation } from 'react-router-dom';
+
 import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
+
 import AboutUsPage from './AboutUsPage';
 import StudentsAndFacultiesPage from './StudentsAndFacultiesPage';
 import FacilitiesPage from './FacilitiesPage';
+
 import AboutSidebar from './Sidebars/AboutSidebar';
+import FacilitiesSidebar from './Sidebars/FacilitiesSidebar';
+import StudentsSidebar from './Sidebars/StudentsSidebar';
 
 const images = [
   '/images/img1.jpg',
@@ -13,49 +17,57 @@ const images = [
   '/images/img3.jpg',
 ];
 
-
 const App = () => {
   const location = useLocation();
 
-    const renderSidebar = () => {
-    if (location.pathname.startsWith('/about')) {
-      return <AboutSidebar />;
-    // } else if (location.pathname.startsWith('/facilities')) {
-    //   return <FacilitiesSidebar />;
-    } else {
-      return null; // or a default sidebar
-    }
-
-  };
-
   const [index, setIndex] = useState(0);
+  const [showAlert, setShowAlert] = useState(true);
 
-  const next = () => setIndex((index + 1) % images.length);
-  const prev = () => setIndex((index - 1 + images.length) % images.length);
+  const next = () => setIndex((prev) => (prev + 1) % images.length);
+  const prev = () => setIndex((prev) => (prev - 1 + images.length) % images.length);
 
   useEffect(() => {
     const interval = setInterval(next, 3000);
     return () => clearInterval(interval);
-  }, [index]);
+  }, []);
+
+  const renderSidebar = () => {
+    if (location.pathname.startsWith('/about')) return <AboutSidebar />;
+    if (location.pathname.startsWith('/facilities')) return <FacilitiesSidebar />;
+    if (location.pathname.startsWith('/students')) return <StudentsSidebar />;
+    return null;
+  };
 
   return (
     <div className="page-container">
-      {/* Sidebar is fixed */}
+      {/* Sidebar */}
       {renderSidebar()}
 
-      {/* Top Navbar is fixed */}
+      {/* Top Navbar */}
       <div className="top-nav">
         <nav>
-          <Link to="/about">About Us</Link>
-          <Link to="/facilities">Facilities</Link>
-          <a href="#projects">Projects & Research</a>
-          <a href="#involved">Get Involved</a>
-          <Link to="/students">Student & Faculties</Link>
+          <NavLink to="/about" className="nav-link">About Us</NavLink>
+          <NavLink to="/facilities" className="nav-link">Facilities</NavLink>
+          <a href="#projects" className="nav-link">Projects & Research</a>
+          <a href="#involved" className="nav-link">Get Involved</a>
+          <NavLink to="/students" className="nav-link">Student & Faculties</NavLink>
         </nav>
       </div>
 
-      {/* Main scrollable content */}
-      <div className="main-content">
+      {/* Alert Banner */}
+      {showAlert && (
+      <div className="alert-banner">
+        <div className="marquee">
+          <span>🚨 Scheduled Maintenance at 10 PM tonight. Save your work in advance! 🚨 Scheduled Maintenance at 10 PM tonight. Save your work in advance! 🚨</span>
+        </div>
+        <button onClick={() => setShowAlert(false)} className="close-btn">&times;</button>
+      </div>
+    )}
+
+
+      {/* Main Content */}
+      <div className={`main-content ${showAlert ? 'with-alert' : ''}`}>
+        
         <div className="carousel">
           <button onClick={prev}>&lt;</button>
           <img src={images[index]} alt="Carousel" />
@@ -66,29 +78,24 @@ const App = () => {
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/students" element={<StudentsAndFacultiesPage />} />
           <Route path="/facilities" element={<FacilitiesPage />} />
-          <Route
-            path="/"
-            element={
-              <>
-                <h1>Vision for the IDEA Lab</h1>
-                <p>
-                  The IDEA Lab will serve as a hub for enhancing science and engineering
-                  education, benefiting students, faculty, industry professionals, and the
-                  workforce by aligning with the latest industry trends and practices...
-                </p>
-                <h1>Benefits to Students and Staff</h1>
-                <h2>Students: UG/PG/Projects/Internships</h2>
-                <p>
-                  The End-to-End Facilities for Skill Development offer students access to
-                  a well-equipped lab...
-                </p>
-              </>
-            }
-          />
+          <Route path="/" element={
+            <>
+              <h1>Vision for the IDEA Lab</h1>
+              <p>
+                The IDEA Lab will serve as a hub for enhancing science and engineering
+                education, benefiting students, faculty, industry professionals...
+              </p>
+              <h1>Benefits to Students and Staff</h1>
+              <h2>Students: UG/PG/Projects/Internships</h2>
+              <p>
+                The End-to-End Facilities for Skill Development offer students access to
+                a well-equipped lab...
+              </p>
+            </>
+          } />
         </Routes>
       </div>
     </div>
-    
   );
 };
 
