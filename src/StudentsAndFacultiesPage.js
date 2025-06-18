@@ -96,7 +96,7 @@ const StudentsAndFacultiesPage = () => {
       <ul>
         <li><strong>Faculty Leads:</strong> Dr. Amit Soni (Chief Mentor), Dr. Ashima Bagaria (Coordinator), Dr. Preeti Narooka (Co-Coordinator)</li>
         <li><strong>Core Faculty Team:</strong> 10+ experts from electronics, physics, CS, mechanical, etc.</li>
-        <li><strong>Student Innovators:</strong> Prisha, Vemula, Dominique, and others actively leading innovation efforts.</li>
+        <li><strong>Student Innovators:</strong> Prisha, Vemula, and others actively leading innovation efforts.</li>
       </ul>
 
       <h2 id='mentorship'>Mentorship Network</h2>
