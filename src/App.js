@@ -12,9 +12,9 @@ import FacilitiesSidebar from './Sidebars/FacilitiesSidebar';
 import StudentsSidebar from './Sidebars/StudentsSidebar';
 
 const images = [
-  '/images/img1.jpg',
-  '/images/img2.jpg',
-  '/images/img3.jpg',
+  '/images/TrialPic1.jpeg',
+  '/images/TrialPic2.jpeg',
+  '/images/TrialPic3.jpg',
 ];
 
 const App = () => {
@@ -52,6 +52,18 @@ const App = () => {
           <a href="#involved" className="nav-link">Get Involved</a>
           <NavLink to="/students" className="nav-link">Student & Faculties</NavLink>
         </nav>
+         <div className="logo-container-top">
+          <img
+            src="/images/AICTELabLogo.jpg"
+            alt="AICTE IDEA Lab Logo"
+            className="sidebar-logo idea-logo"
+          />
+          <img
+            src="/images/MUJLogo.jpg"
+            alt="MUJ Logo"
+            className="sidebar-logo muj-logo"
+          />
+        </div>
       </div>
 
       {/* Alert Banner */}

@@ -8,7 +8,7 @@ const AboutSidebar = () => (
         className="sidebar-logo idea-logo"
       />
       <img
-        src="\images\MUJLogo.png"
+        src="/images/MUJLogo.jpg"
         alt="MUJ Logo"
         className="sidebar-logo muj-logo"
       />
