@@ -300,7 +300,7 @@ section {
 }
 
 .logo-container-top .sidebar-logo:hover {
-  transform: scale(2.5);
+  transform: scale(0.5);
 }
 
 .logo-container-top .idea-logo {
