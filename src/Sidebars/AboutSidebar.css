@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px; /* adjust as needed */
+}
 
 .logo-container {
   display: flex;
@@ -15,11 +19,11 @@
   border-radius: 4px;
   display: block;
   transition: transform 0.2s ease;
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15); /* subtle elevation */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar-logo:hover {
-  transform: scale(1.05); /* slight zoom on hover */
+  transform: scale(1.05);
 }
 
 .idea-logo {
@@ -33,22 +37,40 @@
 }
 
 .side-nav {
+  position: relative;
   width: 230px;
   height: 100vh;
-  background-color: #e26500; /* deeper orange */
+  background-color: #e26500;
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
-  font-family: 'Courier New', monospace; /* or use a clean sans-serif like Roboto */
+  font-family: 'Courier New', monospace;
+  transition: width 0.3s ease;
 }
 
+.side-nav.collapsed {
+  width: 60px;
+  padding: 20px 10px;
+}
+
+.side-nav.collapsed .logo-container,
+.side-nav.collapsed h2,
+.side-nav.collapsed hr,
+.side-nav.collapsed ul {
+  display: none;
+}
 
 .side-nav h2 {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
+  margin-top: 50px;
   margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 .side-nav hr {
+
   border: none;
   height: 1px;
   background-color: #ffffff99;
@@ -60,8 +82,15 @@
   padding: 0;
   margin: 0;
 }
+.side-nav ul li a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+
+}
 
 .side-nav li {
+  font-size: 20px;
   margin: 10px 0;
 }
 
@@ -82,6 +111,37 @@
   font-family: 'Courier New', monospace;
 }
 
-.side-nav{
-  font-family: 'Courier New',monospace;
+/* Toggle Button - hamburger style */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  background-color: #e26500;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1001;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #ff7f24;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16px;
+  width: 20px;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  border-radius: 1px;
 }
