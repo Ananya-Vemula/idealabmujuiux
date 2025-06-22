@@ -55,7 +55,7 @@ body, html {
 
 .page-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 100vh;
 }
 
@@ -85,7 +85,7 @@ section {
   color: white;
   padding: 20px;
   box-sizing: border-box;
-  position: fixed;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
@@ -127,7 +127,8 @@ section {
 }
 
 .main-content {
-  margin-left: 220px; /* Width of the sidebar */
+  flex: 1;
+  margin-left: 20px; /* Width of the sidebar */
   margin-top: 60px;   /* Height of the navbar */
   padding: 20px;
   background-color: #fef9e1c6;
@@ -175,7 +176,6 @@ section {
   font-weight: bold;
   position: fixed;
   top: 60px; /* just below navbar */
-  left: 220px; /* adjust based on sidebar width */
   right: 0;
   height: 40px;
   z-index: 998;
@@ -248,18 +248,18 @@ section {
 
 .top-nav {
   position: fixed;
-  left: 220px;
+  left: var(--sidebar-width);
   height: 60px;
   background-color: #FF9D23;
   color: white;
   font-family: monospace;
   font-size: x-large;
   display: flex;
-  justify-content: space-between; /* 👈 Added */
+  justify-content: space-between; 
   align-items: center;
   box-sizing: border-box;
   z-index: 900;
-  width: calc(100% - 220px); /* 👈 Adjusted */
+  width: calc(100% - 210px);
   padding: 0 20px; /* 👈 Updated for left+right padding */
 }
 
@@ -442,3 +442,17 @@ tr:hover {
 .logo-container.stacked .sidebar-logo {
   max-width: 80%;
 }
+
+.top-nav, .alert-banner {
+  transition: left 0.3s ease-in-out;
+}
+
+.top-nav, .alert-banner {
+  position: fixed;
+  left: var(--sidebar-width, 220px);
+  right: 0;
+  height: 60px;
+  z-index: 999;
+  transition: left 0.3s ease-in-out;
+}
+

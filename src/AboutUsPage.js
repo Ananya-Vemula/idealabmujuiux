@@ -3,7 +3,6 @@ import Footer from './Footer';
 
 const AboutUsPage = () => {
   return (
-    <div className="page-container">
       <div className="content-body">
         <section id="aboutus">
           <h2>About Us</h2>
@@ -135,9 +134,9 @@ We focus on sustainable technologies that address rural challenges while alignin
             <li>Vemula Ananya - AICTE Lab Webiste</li>
           </ul>
         </section>
-      </div>
+      
 
-    <Footer />
+      <Footer />
     </div>
   );
 };

@@ -31,12 +31,19 @@ const App = () => {
     return () => clearInterval(interval);
   }, []);
 
+ 
+
+  const [sidebarWidth, setSidebarWidth] = useState(250); // default expanded
   const renderSidebar = () => {
-    if (location.pathname.startsWith('/about')) return <AboutSidebar />;
-    if (location.pathname.startsWith('/facilities')) return <FacilitiesSidebar />;
-    if (location.pathname.startsWith('/students')) return <StudentsSidebar />;
+    if (location.pathname.startsWith('/about'))
+      return <AboutSidebar setSidebarWidth={setSidebarWidth} />;
+    if (location.pathname.startsWith('/facilities'))
+      return <FacilitiesSidebar setSidebarWidth={setSidebarWidth} />;
+    if (location.pathname.startsWith('/students'))
+      return <StudentsSidebar setSidebarWidth={setSidebarWidth} />;
     return null;
   };
+
 
   return (
     <div className="page-container">
@@ -44,7 +51,7 @@ const App = () => {
       {renderSidebar()}
 
       {/* Top Navbar */}
-      <div className="top-nav">
+      <div className="top-nav" style={{left:sidebarWidth}}>
         <nav>
           <NavLink to="/about" className="nav-link">About Us</NavLink>
           <NavLink to="/facilities" className="nav-link">Facilities</NavLink>
@@ -68,7 +75,7 @@ const App = () => {
 
       {/* Alert Banner */}
       {showAlert && (
-      <div className="alert-banner">
+      <div className="alert-banner" style={{left : sidebarWidth}}>
         <div className="marquee">
           <span>🚨 Scheduled Maintenance at 10 PM tonight. Save your work in advance! 🚨 Scheduled Maintenance at 10 PM tonight. Save your work in advance! 🚨</span>
         </div>

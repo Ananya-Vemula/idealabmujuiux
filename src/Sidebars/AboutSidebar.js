@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './AboutSidebar.css';
 
-const AboutSidebar = () => {
+const AboutSidebar = ({setSidebarWidth}) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const toggleSidebar = () => {
-    setIsOpen(!isOpen);
+    const newState =!isOpen;
+    setIsOpen(newState);
+    setSidebarWidth(newState? 220 : 60);
     
   };
 
